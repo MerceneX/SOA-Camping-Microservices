@@ -17,7 +17,7 @@ app.use(express.json());
 
 app.use("/man-o-swag", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
-app.use("/spaces", checkJwt, spacesRoutes);
+app.use("/spaces", /*checkJwt, */spacesRoutes);
 app.use("/", indexRoutes);
 
 app.listen(port, () => {

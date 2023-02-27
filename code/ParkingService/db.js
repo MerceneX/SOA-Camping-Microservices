@@ -1,8 +1,8 @@
 // db.js
 const MongoClient = require("mongodb").MongoClient;
 
-const url = "mongodb+srv://soa-user:soavaje2020@cluster0.cymie.mongodb.net/parking_servce_db?retryWrites=true&w=majority";
-
+const url = "mongodb+srv://mondmin:2fX1mk8K7gZBGZYq@testdb.vltwrff.mongodb.net/?retryWrites=true&w=majority";
+//mongodb+srv://soa-user:soavaje2020@cluster0.cymie.mongodb.net/parking_servce_db?retryWrites=true&w=majority
 var client;
 
 const getClient = async () => {

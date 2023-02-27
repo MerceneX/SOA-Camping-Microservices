@@ -1,0 +1,18 @@
+version: "3.4"
+
+networks:
+    camps-network:
+        driver: bridge
+
+services:
+  parking-service:
+    image: parking-service:latest
+    container_name: ParkingService
+    restart: always
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "32964:5000"
+    networks:
+      - camps-network

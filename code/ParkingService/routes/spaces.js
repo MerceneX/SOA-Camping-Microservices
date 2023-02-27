@@ -10,7 +10,6 @@ router.get("/", async (req, res) => {
 		const client = await getClient();
 		const db = client.db("parking_servce_db");
 		const collection = db.collection("spaces");
-
 		collection.find({}).toArray(function (err, docs) {
 			if (err) throw err;
 			console.log("Found the following records");
